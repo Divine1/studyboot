@@ -23,6 +23,7 @@ public class PostController {
 
     @GetMapping(value = "")
     List<Post> findAll(){
+
         return jsonPlaceholderService.findAll();
     }
     @GetMapping(value = "/{id}")
