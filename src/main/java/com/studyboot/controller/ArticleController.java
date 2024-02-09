@@ -1,6 +1,7 @@
 package com.studyboot.controller;
 
 
+import com.studyboot.common.Common;
 import com.studyboot.model.Article;
 import com.studyboot.repository.ArticleRepository;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,7 @@ public class ArticleController {
 
     @GetMapping
     public List<Article> findAll(){
+        Common.sleep(20);
         return articleRepository.findAll();
     }
 
